@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class DirectionalNode : MonoBehaviour
 {
+    SpriteRenderer sr;
     public Sprite none;
     public Sprite left;
     public Sprite right;
     public string current;
-    SpriteRenderer sr;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
+        //get our Sprite Renderer
         sr = GetComponent<SpriteRenderer>();
         SwitchSprite();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
